@@ -57,7 +57,7 @@ int32_t SuperMatch::build(std::vector<std::string> pattern)
             {
                 bFlag = true;
                 BinaryTree<NS_SUPERMATCH::Pattern> *pNode = nullptr;
-                try    {
+                try {
                     pNode = new BinaryTree<NS_SUPERMATCH::Pattern>;
                 }catch(std::bad_alloc) {
                     return MATCH_FAIL;
